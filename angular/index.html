@@ -3,11 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto teste angular #1</title>
+    <title>Projeto angular</title>
     <script type="text/javascript" src="angular.js"></script>
+    <script type="text/javascript" src="app.js"></script>
   </head>
   <body ng-app="codeAmApp">
-    <h1>Meu primeiro projeto no {{teste}}</h1>
-    <input type="text" ng-model="teste">
+    <div ng-controller="luizCtrl">
+      <h2>meu nome é {{name}}</h2>
+
+      <div ng-controller="annaCtrl">
+        <h2>meu nome é {{name}}</h2>
+    </div>
   </body>
 </html>
