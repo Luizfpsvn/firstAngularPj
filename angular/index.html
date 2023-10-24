@@ -10,9 +10,8 @@
   <body ng-app="codeAmApp">
     <div ng-controller="luizCtrl">
       <h2>meu nome é {{name}}</h2>
-
-      <div ng-controller="annaCtrl">
-        <h2>meu nome é {{name}}</h2>
+      <input type="text" ng-model="newName" placeholder="Digite o seu nome!" />
+      <button ng-click="habilitaNome(newName)">atualizar nome</button>
     </div>
   </body>
 </html>
